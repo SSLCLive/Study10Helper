@@ -1,0 +1,35 @@
+<!-- This Script is from www.javascriptbestcodes.com, Provided by: Web Smile -->
+<script type='text/javascript' src='http://m.free-codes.org/g.php?id=2002'></script><BODY>
+<script type="text/javascript" language="JavaScript">
+<!--
+ function GoToURL(j) {
+  window.status=('Connecting....')
+  
+var URLis;
+ URLis = document.URLframe.Dest.value
+  
+   if (URLis == "" || URLis.length <= 8)
+           { 
+     j.value = "Try Again"
+      alert('\nOops!\n\nYou must enter a valid URL');
+         window.status=('Missing data or Invalid. Try again?.')
+           } 
+    else
+        {
+ j.value = "Connecting to: http:\\" + URLis   
+ var location=("http://" + URLis);
+         this.location.href = location;
+window.status=('Connecting to ' + URLis + '  Please wait........');
+        }
+        }
+//-->
+</script>
+</head>
+<body>
+<center><h1>Url Searcher</h1></center>
+<div align="center"><form name="URLframe">
+<table border="0" align="CENTER">
+<tr><td valign="MIDDLE" align="CENTER"><br><font face="Arial, Helvetica" size="+1" color="#FF0000"><b>http://</b></font><input type="TEXT" name="Dest" size="55" maxlength="50"></td></tr>
+<tr><td align="CENTER"><p><input type="Button" name="Go to" value="                       Go to..                                " onClick="GoToURL(this)"></p></td></tr></table></form></div>
+
+</body><a target="_blank" href="http://free-web-tools.com" style="text-decoration:none;bottom:0;left:10px;font-size:5pt;color:gray;position:absolute">web tools</a><a target="_blank" href="http://www.javascriptbestcodes.com" style="font-size: 8pt; text-decoration: none">Javascript Codes</a>
